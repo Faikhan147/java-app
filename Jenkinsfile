@@ -3,7 +3,7 @@ pipeline {
     agent any 
 
     environment {
-        IMAGE_NAME = "faisalkhan35/java-main:latest"
+        IMAGE_NAME = "faisalkhan35/java-main-1"
 
     }
     tools {
@@ -50,7 +50,7 @@ pipeline {
                 branch 'main'
             }
             steps {
-                sh 'docker run --name myapp -p 8082:8080 -d ${IMAGE_NAME_1}'
+                sh 'docker run --name myapp-1 -p 8082:8080 -d ${IMAGE_NAME}'
             }
         }
     }
