@@ -6,6 +6,9 @@ pipeline {
         IMAGE_NAME = "faisalkhan35/java-main:latest"
 
     }
+    tools {
+      maven 'Maven17'
+    }
 
     stages {
         
