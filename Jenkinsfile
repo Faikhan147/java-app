@@ -12,7 +12,7 @@ pipeline {
 
     stages {
         
-        stage('Git clon') {
+        stage('Git clone') {
             steps {
                 checkout scm
             }
