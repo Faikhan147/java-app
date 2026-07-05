@@ -50,7 +50,7 @@ pipeline {
                 branch 'main'
             }
             steps {
-                sh 'docker run --name myapp -p 8082:8080 -d ${IMAGE_NAME}'
+                sh 'docker run --name myapp -p 8082:8080 -d ${IMAGE_NAME_1}'
             }
         }
     }
